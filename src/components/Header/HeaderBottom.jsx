@@ -37,7 +37,7 @@ export const HeaderBottom = () => {
 
       {/* side nav  */}
       {sideBar && (
-        <div className="w-full h-screen text-black fixed top-0 left-0 bg-amazon_blue bg-opacity-50">
+        <div className=" w-full h-screen text-black fixed top-0 left-0 bg-amazon_blue bg-opacity-50">
           <div className="w-full h-full relative">
             <motion.div
               ref={ref}
@@ -54,30 +54,32 @@ export const HeaderBottom = () => {
               </div>
 
               {/* side nav  */}
-              <SideNavContent
-                title="Digital Content & Devices"
-                one="Amazon music"
-                two="Kindle Books"
-                three="Amazon Appstore"
-              />
-              <SideNavContent
-                title="Shop By Department"
-                one="Electronics"
-                two="Computers"
-                three="Smart Home"
-              />
-              <SideNavContent
-                title="Programs & Features"
-                one="Gift Cards"
-                two="Amazon Live"
-                three="International Shopping"
-              />
-              <SideNavContent
-                title="Help & Settings"
-                one="Your Account"
-                two="Customer Services"
-                three="Contact us"
-              />
+              <div>
+                <SideNavContent
+                  title="Digital Content & Devices"
+                  one="Amazon music"
+                  two="Kindle Books"
+                  three="Amazon Appstore"
+                />
+                <SideNavContent
+                  title="Shop By Department"
+                  one="Electronics"
+                  two="Computers"
+                  three="Smart Home"
+                />
+                <SideNavContent
+                  title="Programs & Features"
+                  one="Gift Cards"
+                  two="Amazon Live"
+                  three="International Shopping"
+                />
+                <SideNavContent
+                  title="Help & Settings"
+                  one="Your Account"
+                  two="Customer Services"
+                  three="Contact us"
+                />
+              </div>
               {/* side nav ends  */}
 
               <span

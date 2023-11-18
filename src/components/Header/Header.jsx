@@ -24,7 +24,7 @@ export const Header = () => {
         <div className="headerHover ">
           <LocationOnIcon />
           <p className="text-sm text-lightText font-lightFont flex flex-col">
-            Deliver to{" "}
+            Deliver to
             <span className="text-sm text-whiteText -mt-1 font-semibold">
               Nepal
             </span>
