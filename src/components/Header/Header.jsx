@@ -5,13 +5,14 @@ import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined
 import SearchIcon from "@mui/icons-material/Search";
 import { allItems } from "../../constants";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { HeaderBottom } from "./HeaderBottom";
 
 export const Header = () => {
   const [showAll, setShowAll] = useState(false);
   // console.log(showAll);
 
   return (
-    <div className="">
+    <div className="w-full">
       <div className="w-full bg-amazon_blue text-white px-4 py-3 flex items-center gap-4">
         {/* logo */}
         <div className="headerHover ">
@@ -100,6 +101,7 @@ export const Header = () => {
         </div>
         {/* cart ends  */}
       </div>
+      <HeaderBottom />
     </div>
   );
 };
