@@ -12,7 +12,7 @@ export const Header = () => {
   // console.log(showAll);
 
   return (
-    <div className="w-full">
+    <div className="w-full sticky top-0 z-50">
       <div className="w-full bg-amazon_blue text-white px-4 py-3 flex items-center gap-4">
         {/* logo */}
         <div className="headerHover ">
@@ -26,7 +26,7 @@ export const Header = () => {
           <p className="text-sm text-lightText font-lightFont flex flex-col">
             Deliver to{" "}
             <span className="text-sm text-whiteText -mt-1 font-semibold">
-              Kiran
+              Nepal
             </span>
           </p>
         </div>

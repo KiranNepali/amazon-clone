@@ -1,6 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
-import React from "react";
 import {
   bannerImgOne,
   bannerImgTwo,
@@ -9,7 +8,7 @@ import {
   bannerImgFive,
 } from "../../assets/index";
 
-export const Banner = () => {
+const Banner = () => {
   const [dotActive, setDocActive] = useState(0);
   const settings = {
     dots: true,
@@ -104,3 +103,5 @@ export const Banner = () => {
     </div>
   );
 };
+
+export { Banner };
