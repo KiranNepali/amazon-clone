@@ -7,6 +7,7 @@ import { allItems } from "../../constants";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { HeaderBottom } from "./HeaderBottom";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [showAll, setShowAll] = useState(false);
@@ -17,9 +18,11 @@ export const Header = () => {
     <div className="w-full sticky top-0 z-50">
       <div className="w-full bg-amazon_blue text-white px-4 py-3 flex items-center gap-4">
         {/* logo */}
-        <div className="headerHover ">
-          <img className="w-24 mt-2 " src={logo} alt="logo" />
-        </div>
+        <Link to="/">
+          <div className="headerHover ">
+            <img className="w-24 mt-2 " src={logo} alt="logo" />
+          </div>
+        </Link>
         {/* logo ends  */}
 
         {/* deliver */}
@@ -92,15 +95,17 @@ export const Header = () => {
         {/* order ends */}
 
         {/* cart  */}
-        <div className="flex flex-center justify-center headerHover items-start relative">
-          <ShoppingCartIcon />
-          <p className="text-xs font-semibold mt-3 text-whiteText">
-            Cart{" "}
-            <span className="absolute text-xs -top-1 left-6 font-semibold p-1 h-4 bg-[#f3a847] text-amazon_blue rounded-full flex justify-center items-center">
-              {products.length > 0 ? products.length : 0}
-            </span>
-          </p>
-        </div>
+        <Link to="/cart">
+          <div className="flex flex-center justify-center headerHover items-start relative">
+            <ShoppingCartIcon />
+            <p className="text-xs font-semibold mt-3 text-whiteText">
+              Cart{" "}
+              <span className="absolute text-xs -top-1 left-6 font-semibold p-1 h-4 bg-[#f3a847] text-amazon_blue rounded-full flex justify-center items-center">
+                {products.length > 0 ? products.length : 0}
+              </span>
+            </p>
+          </div>
+        </Link>
         {/* cart ends  */}
       </div>
       <HeaderBottom />
