@@ -6,11 +6,13 @@ import SearchIcon from "@mui/icons-material/Search";
 import { allItems } from "../../constants";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { HeaderBottom } from "./HeaderBottom";
+import { useSelector } from "react-redux";
 
 export const Header = () => {
   const [showAll, setShowAll] = useState(false);
   // console.log(showAll);
-
+  const products = useSelector((state) => state.amazonReducer.products);
+  console.log(products);
   return (
     <div className="w-full sticky top-0 z-50">
       <div className="w-full bg-amazon_blue text-white px-4 py-3 flex items-center gap-4">
@@ -95,7 +97,7 @@ export const Header = () => {
           <p className="text-xs font-semibold mt-3 text-whiteText">
             Cart{" "}
             <span className="absolute text-xs -top-1 left-6 font-semibold p-1 h-4 bg-[#f3a847] text-amazon_blue rounded-full flex justify-center items-center">
-              0
+              {products.length > 0 ? products.length : 0}
             </span>
           </p>
         </div>
