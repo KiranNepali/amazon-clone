@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <div>
       <Banner />
-      <div className=" w-full -mt-36">
+      <div className=" w-full -mt-25 md:-mt-36">
         <Products />
       </div>
     </div>

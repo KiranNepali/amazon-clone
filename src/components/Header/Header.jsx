@@ -21,7 +21,7 @@ export const Header = () => {
         {/* logo ends  */}
 
         {/* deliver */}
-        <div className="headerHover ">
+        <div className="hidden md:flex headerHover ">
           <LocationOnIcon />
           <p className="text-sm text-lightText font-lightFont flex flex-col">
             Deliver to
@@ -33,7 +33,7 @@ export const Header = () => {
         {/* deliver ends  */}
 
         {/* search  */}
-        <div className="h-10 rounded-md flex flex-grow relative">
+        <div className="hidden  h-10 rounded-md md:flex flex-grow relative">
           <span
             onClick={() => setShowAll(!showAll)}
             className="w-14 h-full flex items-center justify-center bg-gray-200 hover:bg-gray-300 font-titleFont duration-300 text-amazon_blue cursor-pointer rounded-bl-md rounded-tl-md"
@@ -83,7 +83,7 @@ export const Header = () => {
         {/* signin ends */}
 
         {/* order  */}
-        <div className="flex flex-col flex-center justify-center headerHover items-start">
+        <div className="hidden md:flex flex-col flex-center justify-center headerHover items-start">
           <p className="text-lightText font-light text-xs">Returns</p>
           <p className="text-sm font-semibold -mt-1 text-whiteText">& Orders</p>
         </div>

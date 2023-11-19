@@ -10,7 +10,7 @@ export const FooterMiddle = () => {
       {/* Top  */}
       <div className="w-full border-b-[1px] border-gray-500 py-10">
         <div className="max-w-5xl mx-auto text-gray-300">
-          <div className="w-full grid grid-cols-4  place-items-center items-start ">
+          <div className="w-full flex flex-col pl-10 md:pl-0  md:grid md:grid-cols-3 lg:grid-cols-4 place-items-center items-start ">
             {middleList.map((item) => (
               <FooterMiddleList
                 key={item._id}

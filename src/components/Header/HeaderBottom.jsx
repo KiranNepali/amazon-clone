@@ -19,7 +19,7 @@ export const HeaderBottom = () => {
   return (
     <div className="w-full px-4 h-[36px] flex items-center bg-amazon_light text-white">
       {/* list item  */}
-      <ul className="flex items-center text-sm tracking-wide">
+      <ul className="flex items-center text-[10px] md:text-sm tracking-wide">
         <li
           onClick={() => setSideBar(true)}
           className="headerHover flex items-center gap-1"
@@ -44,7 +44,7 @@ export const HeaderBottom = () => {
               initial={{ x: -500, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.1 }}
-              className="w-[350px] h-full bg-white border-black"
+              className="w-[80%] md:w-[350px] h-full bg-white border-black"
             >
               <div className="w-full bg-amazon_light text-white py-2 px-6 flex items-center gap-4">
                 <AccountCircleIcon />
@@ -84,7 +84,7 @@ export const HeaderBottom = () => {
 
               <span
                 onClick={() => setSideBar(false)}
-                className="absolute top-0 left-[360px] w-10 h-10 bg-white text-black hover:text-white flex items-center justify-center border border-gray-200 hover:bg-red-500 cursor-pointer duration-300"
+                className="absolute top-0 left-[246px] md:left-[310px] w-10 h-11 bg-white text-black hover:text-white flex items-center justify-center border border-gray-200 hover:bg-red-500 cursor-pointer duration-300"
               >
                 <CloseIcon />
               </span>
